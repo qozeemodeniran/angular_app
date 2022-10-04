@@ -13,7 +13,7 @@ export class AppComponent {
 
   data: any[] = [];
   constructor(private http: HttpClient) {
-    this.http.get('http://localhost/IT7131_Project/IT7131_react_app/app1/server.php').subscribe(data => {
+    this.http.get('http://localhost/IT7131_Project/react_app/app1/server.php').subscribe(data => {
     this.data.push(data);
     console.log(this.data);
 
